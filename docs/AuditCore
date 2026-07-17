@@ -1,0 +1,29 @@
+AuditCore
+
+docs
+│
+├── Architecture.md
+
+frontend
+│
+├── index.html
+│
+├── dashboard.html
+│
+├── assessment.html
+│
+├── control.html
+│
+├── report.html
+│
+├── login.html
+│
+├── css
+│      └── style.css
+│
+├── js
+│      └── app.js
+│
+└── images
+
+README.md
