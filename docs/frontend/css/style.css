@@ -1,1 +1,40 @@
+/* ===================================================
+   AuditCore - Estilos Globales
+   Versión 0.1
+=================================================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#0F1117;
+    color:#F9FAFB;
+}
+
+/* Colores Oficiales */
+
+:root{
+
+    --background:#0F1117;
+
+    --sidebar:#161B22;
+
+    --card:#1F2937;
+
+    --primary:#2563EB;
+
+    --success:#22C55E;
+
+    --warning:#F59E0B;
+
+    --danger:#DC2626;
+
+    --text:#F9FAFB;
+
+    --text-secondary:#9CA3AF;
+
+}
