@@ -1,14 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=frontend/index.html">
-<title>AuditCore</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuditCore</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+        }
+
+        body{
+            background:#0F1117;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .container{
+            text-align:center;
+            background:#161B22;
+            padding:60px;
+            border-radius:18px;
+            width:800px;
+            box-shadow:0 0 25px rgba(0,0,0,.45);
+        }
+
+        .logo{
+            font-size:55px;
+            margin-bottom:15px;
+        }
+
+        h1{
+            font-size:45px;
+            margin-bottom:10px;
+        }
+
+        .subtitle{
+            color:#9CA3AF;
+            font-size:20px;
+            margin-bottom:35px;
+        }
+
+        .platforms{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:15px;
+            margin-top:20px;
+        }
+
+        .platform{
+            background:#0F1117;
+            padding:18px;
+            border-radius:10px;
+            border:1px solid #30363D;
+            font-size:18px;
+        }
+
+        .footer{
+            margin-top:40px;
+            color:#6B7280;
+            font-size:14px;
+        }
+
+        .version{
+            margin-top:10px;
+            color:#9CA3AF;
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-<p>Redireccionando a AuditCore...</p>
+    <div class="container">
+
+        <div class="logo">🛡️</div>
+
+        <h1>AuditCore</h1>
+
+        <p class="subtitle">
+            Plataforma de Auditoría y Cumplimiento Tecnológico
+        </p>
+
+        <div class="platforms">
+
+            <div class="platform">
+                ☁️ Microsoft 365
+            </div>
+
+            <div class="platform">
+                ☁️ Microsoft Azure
+            </div>
+
+            <div class="platform">
+                ☁️ Amazon Web Services
+            </div>
+
+            <div class="platform">
+                ☁️ Oracle Cloud Infrastructure
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Desarrollado para Auditoría de TI
+
+            <div class="version">
+                Versión 0.1
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
