@@ -1,0 +1,20 @@
+
+{
+  "operators": [
+    "equals",
+    "notEquals",
+    "greaterThan",
+    "lessThan",
+    "greaterOrEqual",
+    "lessOrEqual",
+    "contains",
+    "notContains"
+  ],
+
+  "statuses": [
+    "PASS",
+    "FAIL",
+    "MANUAL",
+    "NOT_APPLICABLE"
+  ]
+}
