@@ -19,12 +19,33 @@
     },
 
     {
-      "id": "1.2.1",
-      "platform": "Microsoft 365",
-      "title": "Ensure that only organizationally managed public groups exist",
-      "level": "L2",
-      "auditType": "Automated",
-      "severity": "Medium"
+      {
+  "id": "1.2.1",
+  "platform": "Microsoft 365",
+  "benchmark": "CIS Microsoft 365 Foundations v6.0.1",
+  "title": "Ensure that only organizationally managed public groups exist",
+  "level": "L2",
+  "auditType": "Automated",
+  "severity": "Medium",
+
+  "audit": {
+    "tool": "Microsoft Graph",
+    "scope": "Group.Read.All",
+    "command": "Get-MgGroup -All | Where {$_.Visibility -eq 'Public'} | Select DisplayName,Visibility"
+  },
+
+  "evaluation": {
+    "field": "count",
+    "operator": "equals",
+    "expected": 0
+  },
+
+  "findingTemplate": "Se identificaron grupos Microsoft 365 configurados con visibilidad pública.",
+
+  "riskTemplate": "La existencia de grupos públicos puede permitir acceso no autorizado a recursos corporativos.",
+
+  "recommendationTemplate": "Configurar los grupos afectados con visibilidad Private y revisar periódicamente la creación de nuevos grupos."
+},
     },
 
     {
