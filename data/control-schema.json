@@ -1,0 +1,26 @@
+{
+  "id": "",
+  "platform": "",
+  "benchmark": "",
+  "title": "",
+  "level": "",
+  "auditType": "",
+  "severity": "",
+
+  "audit": {
+    "tool": "",
+    "command": ""
+  },
+
+  "evaluation": {
+    "operator": "",
+    "expected": "",
+    "field": ""
+  },
+
+  "findingTemplate": "",
+
+  "riskTemplate": "",
+
+  "recommendationTemplate": ""
+}
