@@ -1,30 +1,93 @@
 {
   "controls": [
     {
+      "id": "1.1.1",
+      "platform": "Microsoft 365",
+      "title": "Ensure multifactor authentication is enabled for administrators",
+      "level": "L1",
+      "auditType": "Automated",
+      "severity": "High"
+    },
+
+    {
+      "id": "1.1.2",
+      "platform": "Microsoft 365",
+      "title": "Ensure break-glass accounts are exempted and monitored",
+      "level": "L1",
+      "auditType": "Automated",
+      "severity": "High"
+    },
+
+    {
       "id": "1.2.1",
       "platform": "Microsoft 365",
-      "benchmark": "CIS Microsoft 365 Foundations v6.0.1",
       "title": "Ensure that only organizationally managed public groups exist",
       "level": "L2",
       "auditType": "Automated",
-      "severity": "Medium",
+      "severity": "Medium"
+    },
 
-      "audit": {
-        "tool": "Microsoft Graph",
-        "command": "Get-MgGroup -All | Where {$_.Visibility -eq 'Public'} | Select DisplayName,Visibility"
-      },
+    {
+      "id": "1.2.2",
+      "platform": "Microsoft 365",
+      "title": "Ensure guest access is appropriately restricted",
+      "level": "L2",
+      "auditType": "Automated",
+      "severity": "High"
+    },
 
-      "evaluation": {
-        "operator": "equals",
-        "expected": 0,
-        "field": "count"
-      },
+    {
+      "id": "1.3.1",
+      "platform": "Microsoft 365",
+      "title": "Ensure legacy authentication is blocked",
+      "level": "L1",
+      "auditType": "Automated",
+      "severity": "High"
+    },
 
-      "findingTemplate": "Se identificaron grupos Microsoft 365 configurados con visibilidad pública.",
+    {
+      "id": "1.3.2",
+      "platform": "Microsoft 365",
+      "title": "Ensure Conditional Access policies are configured",
+      "level": "L1",
+      "auditType": "Automated",
+      "severity": "High"
+    },
 
-      "riskTemplate": "Exposición no autorizada de información corporativa.",
+    {
+      "id": "1.4.1",
+      "platform": "Microsoft 365",
+      "title": "Review Global Administrator assignments",
+      "level": "L1",
+      "auditType": "Automated",
+      "severity": "High"
+    },
 
-      "recommendationTemplate": "Configurar la privacidad de los grupos afectados como Private."
+    {
+      "id": "1.4.2",
+      "platform": "Microsoft 365",
+      "title": "Review privileged role assignments",
+      "level": "L1",
+      "auditType": "Automated",
+      "severity": "High"
+    },
+
+    {
+      "id": "1.5.1",
+      "platform": "Microsoft 365",
+      "title": "Review external sharing configuration",
+      "level": "L2",
+      "auditType": "Automated",
+      "severity": "Medium"
+    },
+
+    {
+      "id": "1.5.2",
+      "platform": "Microsoft 365",
+      "title": "Review Teams guest access settings",
+      "level": "L2",
+      "auditType": "Automated",
+      "severity": "Medium"
     }
   ]
 }
