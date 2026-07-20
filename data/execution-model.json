@@ -1,0 +1,42 @@
+{
+  "executionMethods": [
+    {
+      "name": "Microsoft Graph",
+      "type": "API",
+      "platforms": [
+        "Microsoft 365",
+        "Azure AD"
+      ]
+    },
+    {
+      "name": "PowerShell",
+      "type": "Script",
+      "platforms": [
+        "Microsoft 365",
+        "Windows",
+        "Azure"
+      ]
+    },
+    {
+      "name": "Azure CLI",
+      "type": "CLI",
+      "platforms": [
+        "Microsoft Azure"
+      ]
+    },
+    {
+      "name": "AWS CLI",
+      "type": "CLI",
+      "platforms": [
+        "Amazon Web Services"
+      ]
+    },
+    {
+      "name": "OCI CLI",
+      "type": "CLI",
+      "platforms": [
+        "Oracle Cloud Infrastructure"
+      ]
+    }
+  ]
+}
