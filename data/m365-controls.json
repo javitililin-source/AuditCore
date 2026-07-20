@@ -1,0 +1,30 @@
+{
+  "controls": [
+    {
+      "id": "1.2.1",
+      "platform": "Microsoft 365",
+      "benchmark": "CIS Microsoft 365 Foundations v6.0.1",
+      "title": "Ensure that only organizationally managed public groups exist",
+      "level": "L2",
+      "auditType": "Automated",
+      "severity": "Medium",
+
+      "audit": {
+        "tool": "Microsoft Graph",
+        "command": "Get-MgGroup -All | Where {$_.Visibility -eq 'Public'} | Select DisplayName,Visibility"
+      },
+
+      "evaluation": {
+        "operator": "equals",
+        "expected": 0,
+        "field": "count"
+      },
+
+      "findingTemplate": "Se identificaron grupos Microsoft 365 configurados con visibilidad pública.",
+
+      "riskTemplate": "Exposición no autorizada de información corporativa.",
+
+      "recommendationTemplate": "Configurar la privacidad de los grupos afectados como Private."
+    }
+  ]
+}
