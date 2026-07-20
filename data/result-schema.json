@@ -1,0 +1,29 @@
+{
+  "controlId": "",
+  "executionDate": "",
+
+  "status": "",
+
+  "compliance": {
+    "result": "",
+    "score": 0
+  },
+
+  "evidence": [],
+
+  "finding": {
+    "title": "",
+    "description": "",
+    "severity": ""
+  },
+
+  "risk": {
+    "description": ""
+  },
+
+  "recommendation": {
+    "description": ""
+  },
+
+  "rawOutput": {}
+}
