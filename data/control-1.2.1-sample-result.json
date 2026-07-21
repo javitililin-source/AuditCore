@@ -1,0 +1,41 @@
+{
+  "controlId": "1.2.1",
+
+  "executionDate": "2026-07-21",
+
+  "status": "FAIL",
+
+  "compliance": {
+    "result": "Non-Compliant",
+    "score": 0
+  },
+
+  "evidence": [
+    {
+      "DisplayName": "Ventas",
+      "Visibility": "Public"
+    },
+    {
+      "DisplayName": "Recursos Humanos",
+      "Visibility": "Public"
+    }
+  ],
+
+  "finding": {
+    "title": "Public Groups Detected",
+    "description": "Se identificaron grupos Microsoft 365 configurados con visibilidad pública.",
+    "severity": "Medium"
+  },
+
+  "risk": {
+    "description": "Exposición no autorizada de información corporativa."
+  },
+
+  "recommendation": {
+    "description": "Configurar los grupos afectados como Private."
+  },
+
+  "rawOutput": {
+    "count": 2
+  }
+}
