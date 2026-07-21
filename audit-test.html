@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AuditCore Test</title>
+</head>
+<body>
+
+    <h1>AuditCore Evaluation Test</h1>
+
+    <p>Expected: 0</p>
+    <p>Actual: 2</p>
+    <p>Operator: equals</p>
+
+    <button onclick="runTest()">Evaluar</button>
+
+    <h2 id="result">Resultado: Pendiente</h2>
+
+    js/evaluator.js
+
+    <script>
+        function runTest() {
+
+            const result = evaluate(
+                2,
+                0,
+                "equals"
+            );
+
+            document.getElementById("result").innerText =
+                "Resultado: " + result;
+        }
+    </script>
+
+</body>
+</html>
+`
