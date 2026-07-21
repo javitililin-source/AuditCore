@@ -1,0 +1,28 @@
+{
+  "evaluationFlow": [
+    {
+      "operator": "equals",
+      "logic": "actual == expected",
+      "passResult": "PASS",
+      "failResult": "FAIL"
+    },
+    {
+      "operator": "notEquals",
+      "logic": "actual != expected",
+      "passResult": "PASS",
+      "failResult": "FAIL"
+    },
+    {
+      "operator": "greaterThan",
+      "logic": "actual > expected",
+      "passResult": "PASS",
+      "failResult": "FAIL"
+    },
+    {
+      "operator": "lessThan",
+      "logic": "actual < expected",
+      "passResult": "PASS",
+      "failResult": "FAIL"
+    }
+  ]
+}
