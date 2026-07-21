@@ -1,0 +1,15 @@
+{
+  "controlId": "1.2.1",
+
+  "expectedValue": 0,
+
+  "actualValue": 2,
+
+  "operator": "equals",
+
+  "evaluationResult": "FAIL",
+
+  "complianceStatus": "Non-Compliant",
+
+  "justification": "Se identificaron 2 grupos con visibilidad pública cuando el valor esperado era 0."
+}
