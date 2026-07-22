@@ -117,40 +117,52 @@
             </div>
 
         </div>
+</div>
 
-        <div class="footer">
-            Desarrollado para Auditoría de TI
+<div id="results" style="
+    margin-top:30px;
+    text-align:left;
+    display:none;
+    background:#0F1117;
+    border:1px solid #30363D;
+    padding:20px;
+    border-radius:10px;
+">
+</div>
 
-            <div class="version">
-                Versión 0.1
-            </div>
-        </div>
+<div class="footer">
+    Desarrollado para Auditoría de TI
+
+    <div class="version">
+        Versión 0.1
+    </div>
+</div>
 
     </div>
 
     <script>
 
-        function showM365Controls(){
+function showM365Controls(){
 
-            alert(
-`Microsoft 365 - Controles Iniciales
+    const results =
+`
+<h2>Microsoft 365 Controls</h2>
 
-1.1.1 MFA Administradores
-1.1.2 Break Glass Accounts
-1.2.1 Public Groups
-1.2.2 Guest Access
-1.3.1 Legacy Authentication
-1.3.2 Conditional Access
-1.4.1 Global Administrators
-1.4.2 Privileged Roles
-1.5.1 External Sharing
-1.5.2 Teams Guest Access`
-            );
+<br>
 
-        }
+✅ 1.1.1 MFA Administradores<br>
+✅ 1.1.2 Break Glass Accounts<br>
+❌ 1.2.1 Public Groups<br>
+✅ 1.2.2 Guest Access<br>
+✅ 1.3.1 Legacy Authentication<br>
+✅ 1.3.2 Conditional Access<br>
+✅ 1.4.1 Global Administrators<br>
+✅ 1.4.2 Privileged Roles<br>
+✅ 1.5.1 External Sharing<br>
+✅ 1.5.2 Teams Guest Access
+`;
 
-    </script>
+    document.getElementById("results").style.display = "block";
+    document.getElementById("results").innerHTML = results;
 
-</body>
-
-</html>
+}
